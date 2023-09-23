@@ -1,8 +1,8 @@
 import NextAuth from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 
-
 export const authOptions = {
+  secret: "KHGit22rt.rgrgo@efieZ147", // Ajoutez cette ligne avec votre clé secrète réelle
   providers: [
     GoogleProvider({
       clientId: process.env.GOOGLE_CLIENT_ID,
@@ -26,5 +26,6 @@ export const authOptions = {
       return Promise.resolve(session);
     },
   },
-}
-export default NextAuth(authOptions)
+};
+
+export default NextAuth(authOptions);
