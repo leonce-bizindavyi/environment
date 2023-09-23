@@ -54,7 +54,7 @@ export default function Picture() {
         <div className="welcome absolute z-50 left-2 sm:left-10 bottom-10 bg-gray-400 bg-opacity-70 w-[350px] rounded p-4">
           <h1 className="text-4xl font-bold">Welcome to Env.</h1>
           <p className="text-lg">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s
             standard dummy text ever since the 1500s.
           </p>
         </div>
