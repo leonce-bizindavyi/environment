@@ -1,7 +1,11 @@
-import Image from 'next/image'
 import React from 'react'
+import { useRouter } from 'next/router'
 
 export default function Post() {
+    const router = useRouter()
+    const readPost = (post)=>{
+        router.push('/posts')
+    }
   return (
     <div >
         <h1 className='text-2xl text-emerald-950 font-semibold italic mx-auto w-max '>~ Posts ~</h1>
@@ -31,11 +35,10 @@ export default function Post() {
                                 of a page when looking at its layout. 
                                 The point of using Lorem Ipsum is that it has a more-or-less normal distribution</p>
                             <button className='p-2 text-md text-white bg-emerald-950 hover:bg-emerald-900 duration-300 rounded-full font-semiibold flex flex-row justify-center items-center space-x-1'>
-                                <span >Read</span>
+                                <span onClick={()=>readPost(1)}>Read</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6 duration-300 hover:translate-x-2">
                                     <path fillRule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z" clipRule="evenodd" />
                                 </svg>
-
                             </button>
                     </div>
                 </div>
