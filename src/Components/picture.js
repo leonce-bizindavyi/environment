@@ -50,7 +50,6 @@ export default function Picture() {
             className="w-full h-full object-cover brightness-90"
           />
         </SwiperSlide>
-
         <div className="welcome absolute z-50 left-2 sm:left-10 bottom-10 bg-gray-400 bg-opacity-70 w-[350px] rounded p-4">
           <h1 className="text-4xl font-bold">Welcome to Env.</h1>
           <p className="text-lg">
